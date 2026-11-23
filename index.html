@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bruno Starling — Designer & Motion</title>
+  <meta name="description" content="Bruno Starling é designer multidisciplinar: identidade visual, motion graphics e experiências digitais que fazem marcas ganharem vida.">
+  <meta name="theme-color" content="#0d0d0c">
+  <meta property="og:title" content="Bruno Starling — Designer & Motion">
+  <meta property="og:description" content="Identidade visual, motion graphics e experiências digitais.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-loading">
+
+  <!-- Preloader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <span class="loader__label mono">Carregando ideias</span>
+      <span class="loader__count"><span data-loader-count>0</span>%</span>
+    </div>
+    <div class="loader__bar"><span></span></div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="header" data-header>
+    <a href="#topo" class="logo" aria-label="Bruno Starling — início">
+      <span class="logo__mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="18"/><path d="M8 20h24M20 8v24"/></svg>
+      </span>
+      <span class="logo__text">Bruno Starling</span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <ul>
+        <li><a href="#trabalhos" data-hover>Trabalhos</a></li>
+        <li><a href="#sobre" data-hover>Sobre</a></li>
+        <li><a href="#servicos" data-hover>Serviços</a></li>
+        <li><a href="#processo" data-hover>Processo</a></li>
+      </ul>
+    </nav>
+    <a href="#contato" class="btn btn--small" data-magnetic><span>Vamos conversar</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <ul>
+      <li><a href="#trabalhos">Trabalhos</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#processo">Processo</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <p class="mono">ola@brunostarling.com</p>
+  </div>
+
+  <main id="conteudo">
+
+    <!-- HERO -->
+    <section class="hero" id="topo">
+      <canvas class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="hero__content container">
+        <p class="hero__kicker mono" data-reveal>
+          <span class="dot"></span> Disponível para novos projetos — 2027
+        </p>
+        <h1 class="hero__title" aria-label="Design que se move. Marcas que ficam.">
+          <span class="line"><span data-split>Design que</span></span>
+          <span class="line"><span data-split>se <em class="serif-italic">move</em>.</span></span>
+          <span class="line line--outline"><span data-split>Marcas que ficam.</span></span>
+        </h1>
+        <div class="hero__bottom">
+          <p class="hero__lead" data-reveal>
+            Sou designer multidisciplinar. Crio identidades visuais, motion graphics
+            e experiências digitais para marcas que querem ser lembradas — não apenas vistas.
+          </p>
+          <a href="#trabalhos" class="hero__scroll" data-magnetic data-reveal aria-label="Ver trabalhos">
+            <svg class="hero__badge" viewBox="0 0 200 200" aria-hidden="true">
+              <defs><path id="circlePath" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+              <text><textPath href="#circlePath" textLength="486" lengthAdjust="spacing">ver trabalhos • role para baixo • </textPath></text>
+            </svg>
+            <span class="hero__arrow" aria-hidden="true">↓</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee" aria-label="Especialidades">
+      <div class="marquee__track" data-marquee>
+        <div class="marquee__group">
+          <span>Identidade Visual</span><i>✺</i>
+          <span>Motion Graphics</span><i>✺</i>
+          <span>Direção de Arte</span><i>✺</i>
+          <span>UI / Web Design</span><i>✺</i>
+          <span>Tipografia</span><i>✺</i>
+          <span>Animação 3D</span><i>✺</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="about section" id="sobre">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-index mono">(01)</span>
+          <h2 class="section-title" data-reveal>Sobre</h2>
+        </div>
+
+        <p class="manifesto" data-manifesto>
+          Acredito que bom design não é decoração — é intenção em movimento.
+          Cada forma, cor e transição existe para contar uma história, gerar
+          emoção e construir conexões reais entre marcas e pessoas.
+        </p>
+
+        <div class="about__grid">
+          <figure class="portrait" data-reveal>
+            <div class="portrait__art" data-parallax="0.08">
+              <span class="portrait__shape s1"></span>
+              <span class="portrait__shape s2"></span>
+              <span class="portrait__shape s3"></span>
+              <span class="portrait__initials">BS</span>
+            </div>
+            <figcaption class="mono">Belo Horizonte, BR — trabalhando com o mundo</figcaption>
+          </figure>
+
+          <div class="about__text">
+            <p data-reveal>
+              Há mais de 8 anos ajudo startups, agências e marcas consolidadas a
+              encontrar sua voz visual. Meu trabalho vive na interseção entre
+              estratégia, estética e tecnologia.
+            </p>
+            <p data-reveal>
+              Do primeiro rabisco à última keyframe, conduzo projetos com
+              curiosidade, rigor e uma boa dose de experimentação.
+            </p>
+
+            <dl class="stats">
+              <div class="stat" data-reveal>
+                <dt class="mono">Anos de estrada</dt>
+                <dd><span data-count="8">0</span>+</dd>
+              </div>
+              <div class="stat" data-reveal>
+                <dt class="mono">Projetos entregues</dt>
+                <dd><span data-count="140">0</span>+</dd>
+              </div>
+              <div class="stat" data-reveal>
+                <dt class="mono">Clientes em</dt>
+                <dd><span data-count="12">0</span> países</dd>
+              </div>
+              <div class="stat" data-reveal>
+                <dt class="mono">Prêmios & menções</dt>
+                <dd><span data-count="17">0</span></dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRABALHOS -->
+    <section class="work section" id="trabalhos">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-index mono">(02)</span>
+          <h2 class="section-title" data-reveal>Trabalhos<br>selecionados</h2>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filtrar trabalhos">
+          <button class="chip is-active" data-filter="all" aria-pressed="true">Todos</button>
+          <button class="chip" data-filter="branding" aria-pressed="false">Branding</button>
+          <button class="chip" data-filter="motion" aria-pressed="false">Motion</button>
+          <button class="chip" data-filter="digital" aria-pressed="false">Digital</button>
+        </div>
+
+        <div class="work__grid" data-work-grid></div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="services section" id="servicos">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-index mono">(03)</span>
+          <h2 class="section-title" data-reveal>Serviços</h2>
+        </div>
+
+        <ul class="services__list">
+          <li class="service" data-reveal>
+            <button class="service__head" aria-expanded="false">
+              <span class="service__num mono">01</span>
+              <span class="service__name">Identidade Visual</span>
+              <span class="service__icon" aria-hidden="true"></span>
+            </button>
+            <div class="service__body">
+              <div class="service__inner">
+                <p>Sistemas de marca completos, pensados para crescer: estratégia, naming, logotipo, paleta, tipografia e guidelines vivos.</p>
+                <ul class="tags"><li>Estratégia</li><li>Logotipo</li><li>Brandbook</li><li>Rebranding</li></ul>
+              </div>
+            </div>
+          </li>
+          <li class="service" data-reveal>
+            <button class="service__head" aria-expanded="false">
+              <span class="service__num mono">02</span>
+              <span class="service__name">Motion Graphics</span>
+              <span class="service__icon" aria-hidden="true"></span>
+            </button>
+            <div class="service__body">
+              <div class="service__inner">
+                <p>Animações que explicam, encantam e vendem. De vinhetas e logos animados a campanhas para redes sociais e vídeos institucionais.</p>
+                <ul class="tags"><li>2D / 3D</li><li>Logo animado</li><li>Explainer</li><li>Social</li></ul>
+              </div>
+            </div>
+          </li>
+          <li class="service" data-reveal>
+            <button class="service__head" aria-expanded="false">
+              <span class="service__num mono">03</span>
+              <span class="service__name">UI & Web Design</span>
+              <span class="service__icon" aria-hidden="true"></span>
+            </button>
+            <div class="service__body">
+              <div class="service__inner">
+                <p>Sites e produtos digitais com interfaces claras, acessíveis e cheias de personalidade — com microinterações que fazem diferença.</p>
+                <ul class="tags"><li>Websites</li><li>Design System</li><li>Protótipos</li><li>Landing pages</li></ul>
+              </div>
+            </div>
+          </li>
+          <li class="service" data-reveal>
+            <button class="service__head" aria-expanded="false">
+              <span class="service__num mono">04</span>
+              <span class="service__name">Direção de Arte</span>
+              <span class="service__icon" aria-hidden="true"></span>
+            </button>
+            <div class="service__body">
+              <div class="service__inner">
+                <p>Conceito e linguagem visual para campanhas, editoriais e lançamentos, garantindo consistência do briefing à peça final.</p>
+                <ul class="tags"><li>Campanhas</li><li>Key visual</li><li>Editorial</li><li>Fotografia</li></ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROCESSO -->
+    <section class="process section" id="processo">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-index mono">(04)</span>
+          <h2 class="section-title" data-reveal>Como eu<br>trabalho</h2>
+        </div>
+
+        <div class="process__track" data-process>
+          <div class="process__line" aria-hidden="true"><span></span></div>
+          <ol class="process__steps">
+            <li class="step" data-reveal>
+              <span class="step__dot" aria-hidden="true"></span>
+              <span class="step__num mono">Fase 01</span>
+              <h3>Imersão</h3>
+              <p>Entendo o negócio, o público e o contexto. Perguntas certas antes de qualquer pixel.</p>
+            </li>
+            <li class="step" data-reveal>
+              <span class="step__dot" aria-hidden="true"></span>
+              <span class="step__num mono">Fase 02</span>
+              <h3>Conceito</h3>
+              <p>Exploro caminhos, moodboards e rotas criativas até encontrar a ideia que sustenta tudo.</p>
+            </li>
+            <li class="step" data-reveal>
+              <span class="step__dot" aria-hidden="true"></span>
+              <span class="step__num mono">Fase 03</span>
+              <h3>Criação</h3>
+              <p>Desenho, animo e refino com ciclos curtos de feedback. Você acompanha cada etapa.</p>
+            </li>
+            <li class="step" data-reveal>
+              <span class="step__dot" aria-hidden="true"></span>
+              <span class="step__num mono">Fase 04</span>
+              <h3>Entrega</h3>
+              <p>Arquivos organizados, guias de uso e suporte para que a marca ganhe o mundo.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="testimonials section" aria-labelledby="dep-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-index mono">(05)</span>
+          <h2 class="section-title" id="dep-title" data-reveal>O que dizem</h2>
+        </div>
+
+        <div class="slider" data-slider>
+          <div class="slider__viewport" aria-live="polite">
+            <blockquote class="slide is-active">
+              <p>“O Bruno entendeu nossa marca melhor do que nós mesmos. O rebranding mudou a forma como o mercado nos enxerga.”</p>
+              <footer><strong>Marina Costa</strong><span class="mono">CMO, Nuvem Labs</span></footer>
+            </blockquote>
+            <blockquote class="slide">
+              <p>“Animações impecáveis, prazos cumpridos e uma criatividade que contagia o time inteiro. Parceiro para todos os projetos.”</p>
+              <footer><strong>Rafael Mendes</strong><span class="mono">Diretor Criativo, Pulso Agência</span></footer>
+            </blockquote>
+            <blockquote class="slide">
+              <p>“Nosso site novo dobrou o tempo de permanência dos usuários. Cada detalhe foi pensado com carinho.”</p>
+              <footer><strong>Juliana Prado</strong><span class="mono">Founder, Ora Café</span></footer>
+            </blockquote>
+          </div>
+          <div class="slider__controls">
+            <button class="icon-btn" data-prev aria-label="Depoimento anterior" title="Anterior">←</button>
+            <span class="slider__count mono"><span data-current>01</span> / <span data-total>03</span></span>
+            <button class="icon-btn" data-next aria-label="Próximo depoimento" title="Próximo">→</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="clients" aria-label="Clientes">
+        <div class="clients__track">
+          <span>Nuvem Labs</span><span>Pulso</span><span>Ora Café</span><span>Kairos</span><span>Vértice</span><span>Lumen Studio</span><span>Maré</span><span>Atlas Bank</span>
+          <span aria-hidden="true">Nuvem Labs</span><span aria-hidden="true">Pulso</span><span aria-hidden="true">Ora Café</span><span aria-hidden="true">Kairos</span><span aria-hidden="true">Vértice</span><span aria-hidden="true">Lumen Studio</span><span aria-hidden="true">Maré</span><span aria-hidden="true">Atlas Bank</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contact section" id="contato">
+      <div class="container">
+        <p class="mono contact__kicker" data-reveal>(06) — Contato</p>
+        <h2 class="contact__title" aria-label="Tem uma ideia? Vamos dar vida a ela.">
+          <span class="line"><span data-split>Tem uma ideia?</span></span>
+          <span class="line"><span data-split>Vamos dar <em class="serif-italic">vida</em> a ela.</span></span>
+        </h2>
+
+        <div class="contact__grid">
+          <div class="contact__info" data-reveal>
+            <button class="email-copy" data-copy="ola@brunostarling.com" data-cursor="Copiar">
+              <span class="email-copy__text">ola@brunostarling.com</span>
+              <span class="email-copy__hint mono" aria-live="polite">Clique para copiar</span>
+            </button>
+            <ul class="socials">
+              <li><a href="#" target="_blank" rel="noopener" data-hover>Behance <span aria-hidden="true">↗</span></a></li>
+              <li><a href="#" target="_blank" rel="noopener" data-hover>Instagram <span aria-hidden="true">↗</span></a></li>
+              <li><a href="#" target="_blank" rel="noopener" data-hover>LinkedIn <span aria-hidden="true">↗</span></a></li>
+              <li><a href="#" target="_blank" rel="noopener" data-hover>Vimeo <span aria-hidden="true">↗</span></a></li>
+            </ul>
+          </div>
+
+          <form class="form" data-form novalidate data-reveal>
+            <div class="field">
+              <label for="f-name">Seu nome</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="f-email">E-mail</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" placeholder="voce@empresa.com" required>
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+            <fieldset class="field field--chips">
+              <legend>Tipo de projeto</legend>
+              <label class="chip-check"><input type="radio" name="type" value="Identidade visual" checked><span>Identidade</span></label>
+              <label class="chip-check"><input type="radio" name="type" value="Motion graphics"><span>Motion</span></label>
+              <label class="chip-check"><input type="radio" name="type" value="Website"><span>Website</span></label>
+              <label class="chip-check"><input type="radio" name="type" value="Outro"><span>Outro</span></label>
+            </fieldset>
+            <div class="field">
+              <label for="f-msg">Conte sobre o projeto</label>
+              <textarea id="f-msg" name="message" rows="4" required></textarea>
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="btn btn--accent" data-magnetic><span>Enviar mensagem</span></button>
+            <p class="form__status mono" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__big" aria-hidden="true">
+        <span data-footer-word>Starling</span>
+      </div>
+      <div class="footer__row">
+        <span class="mono">© <span data-year></span> Bruno Starling</span>
+        <span class="mono">Hora local — <span data-clock>--:--</span> BRT</span>
+        <a href="#topo" class="mono footer__top" data-hover>Voltar ao topo ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Case study overlay -->
+  <div class="case" data-case role="dialog" aria-modal="true" aria-labelledby="case-title" hidden>
+    <div class="case__panel">
+      <button class="case__close icon-btn" data-case-close aria-label="Fechar estudo de caso" title="Fechar (Esc)">✕</button>
+      <div class="case__cover" data-case-cover></div>
+      <div class="case__body">
+        <p class="mono case__meta" data-case-meta></p>
+        <h2 class="case__title" id="case-title" data-case-title></h2>
+        <p class="case__lead" data-case-lead></p>
+        <div class="case__cols">
+          <div><h3 class="mono">Desafio</h3><p data-case-challenge></p></div>
+          <div><h3 class="mono">Solução</h3><p data-case-solution></p></div>
+          <div><h3 class="mono">Resultado</h3><p data-case-result></p></div>
+        </div>
+        <div class="case__nav">
+          <button class="btn" data-case-next><span>Próximo projeto →</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
